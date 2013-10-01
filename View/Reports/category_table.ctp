@@ -1,0 +1,1 @@
+<?php echo $this->element('category_table'); ?>

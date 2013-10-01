@@ -1,0 +1,8 @@
+html, body {background-color: #fff;}
+a {color: #000;}
+.map_wrapper {margin-top: 20px;}
+.table_wrapper {clear: both; float: none; margin-top: 20px;}
+#category_report .table_wrapper table {margin: 0;}
+#full_report .county_info {float: none; margin: 0; width: auto;}
+#full_report table {margin-bottom: 40px;}
+.print_footer {border-top: 1px solid black; clear: both; font-weight: bold; margin-top: 20px;}
