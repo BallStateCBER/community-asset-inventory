@@ -27,7 +27,6 @@
 		<div class="toggle">
 			<a href="#" id="faq_showtable_fig1">View table</a>
 			<?php $this->Js->buffer("
-				console.log('buffered');
 				$('#faq_showtable_fig1').click(function(event) {
 					event.preventDefault();
 					$('#faq_fig1_img').hide();
