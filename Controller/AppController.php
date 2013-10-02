@@ -5,11 +5,7 @@ class AppController extends Controller {
 		'Html',
 		'Cache'
 	);
-	var $components = array('DataCenter.Flash', 'RequestHandler', 'Session', 'Auth', 'Cookie');
-
-	function beforeFilter() {
-		$this->Auth->allow('*');
-	}
+	var $components = array('DataCenter.Flash', 'RequestHandler', 'Session', 'Cookie');
 
 	function beforeRender() {
 		if ($this->layout == 'default') {
