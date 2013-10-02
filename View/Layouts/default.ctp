@@ -25,6 +25,7 @@
 	$this->Html->script('/DataCenter/js/jquery.svg.js', array('inline' => false));
 	$this->Html->script('/DataCenter/js/jquery.svgdom.js', array('inline' => false));
 	$this->Html->script('/DataCenter/js/jquery.qtip.js', array('inline' => false));
+	$this->Html->script('script', array('inline' => false));
 	
 	// Define the subsite title block
 	$this->start('subsite_title');
