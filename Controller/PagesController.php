@@ -11,7 +11,7 @@ class PagesController extends AppController {
 			'content_wrapper_class' => 'two_col'
 		));
 	}
-	
+
 	public function state($id) {
 		App::uses('Location', 'Model');
 		$Location = new Location();
@@ -23,7 +23,7 @@ class PagesController extends AppController {
 	}
 
 	function sources() {
-		$this->set('title_for_layout', 'Data Sources and Methodology');	
+		$this->set('title_for_layout', 'Data Sources and Methodology');
 	}
 
 	function credits() {
