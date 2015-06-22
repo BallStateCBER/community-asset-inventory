@@ -8,7 +8,7 @@
 	</p>
 	<dl>
 		<dt>Research,</dt>
-			<dd><a href="mailto:mhicks@bsu.edu">Michael J. Hicks, PhD.</a></dd>
+			<dd><a href="mailto:cberdirector@bsu.edu">Michael J. Hicks, PhD.</a></dd>
 			<br />
 		<dt>Research,</dt>
 			<dd><a href="mailto:sdevaraj@bsu.edu">Srikant Devaraj, PMP</a></dd>
