@@ -44,7 +44,9 @@
 	// Define the 'about' section of the footer
 	$this->start('footer_about');
 
-	echo $this->element('flash_messages', array(), array('plugin' => 'DataCenter'));
+    $this->start('flash_messages');
+	    echo $this->element('flash_messages', array(), array('plugin' => 'DataCenter'));
+    $this->end();
 ?>
 	<h3>
 		About the Community Asset Inventory and Rankings
