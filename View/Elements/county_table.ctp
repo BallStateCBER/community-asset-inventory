@@ -40,8 +40,8 @@
 	</tbody>
 	<tfoot>
 		<tr>
-			<td colspan="0">
-				N/A: Only points are used when assessing the <br /> 
+			<td colspan="3">
+				N/A: Only points are used when assessing the
 				changeable and static amenities categories.
 			</td>
 		</tr>
