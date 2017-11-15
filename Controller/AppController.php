@@ -5,7 +5,19 @@ class AppController extends Controller {
 		'Html',
 		'Cache'
 	);
-	public $components = array('DataCenter.Flash', 'RequestHandler', 'Session', 'Cookie');
+	public $components = array(
+	    'DataCenter.Flash',
+        'RequestHandler',
+        'Session',
+        'Cookie',
+        'Security'
+    );
+
+    public function beforeFilter()
+    {
+        $this->Security->blackHoleCallback = 'forceSSL';
+        $this->Security->requireSecure();
+    }
 
 	public function beforeRender() {
 		if ($this->layout == 'default') {
@@ -21,4 +33,14 @@ class AppController extends Controller {
 			));	
 		}
 	}
+
+    /**
+     * Redirects the current request to HTTPS
+     *
+     * @return mixed
+     */
+    public function forceSSL()
+    {
+        return $this->redirect('https://' . env('SERVER_NAME') . $this->here);
+    }
 }
