@@ -3,7 +3,7 @@ App::uses('AppModel', 'Model');
 class Datum extends AppModel {
     var $name = 'Datum';
     var $displayField = 'value';
-    var $useTable = 'values';
+    var $useTable = 'scores';
     var $actsAs = array('Containable');
 	var $belongsTo = array(
 		'DataCategory' => array(
