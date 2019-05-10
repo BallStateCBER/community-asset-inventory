@@ -20,11 +20,3 @@
 <p>
 	To begin, click on a category to view data for all Indiana counties.  If you want to view all the data for a specific county, you can click on the county using the map, or you can select the county from the navigation panel on the left.
 </p>
-
-<h2>Browser Compatibility</h2>
-<p>
-	This site is compatible with most smart phones and the most recent versions of all major browsers. 
-	Users of old versions of Internet Explorer (8.0 and earlier), Safari 
-	(5.0 and earlier), and the Android browser (2.3 and earlier) will not be 
-	able to use the interactive maps, but will have access to all other features.
-</p>
