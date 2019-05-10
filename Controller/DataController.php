@@ -148,7 +148,7 @@ class DataController extends AppController {
 
 		// A new entry needs to be added to the database
 		} else {
-			$insert_result = $this->Datum->save(array('Datum' => compact('county_id', 'category_id', 'value')));
+			$insert_result = $this->Datum->save(array('Datum' => compact('county_id', 'category_id', 'value', 'year')));
 			if (! $insert_result) return 4;
 		}
 
