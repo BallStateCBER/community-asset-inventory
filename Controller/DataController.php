@@ -15,7 +15,8 @@ class DataController extends AppController {
 	}
 	
 	public function import() {
-		$file_path = "C:\\Users\\gtwatson\\Documents\\Quality of Place\\00 CAIR scorecard 2012 (errors corrected).txt";
+        $year = 2018;
+		$file_path = "C:\\xampp\\htdocs\\data_center\\app_cair\\tmp\\2018 CAIR scorecard.txt";
 		$fh = fopen($file_path, 'r');
 		$header_row_count = 1;
 		$result_messages = array();
@@ -65,8 +66,8 @@ class DataController extends AppController {
 					$category_id = $category[1];
 					// To do: Confirm category_id is valid
 					$value = trim($fields[$col_num]);
-					$result_code = $this->__safeInsert(compact('category_id', 'county_id', 'value'));
-					list($result_message, $result_class) = $this->__flashSafeInsertResultMsg($county_name, $category_name, $value, $result_code);
+					$result_code = $this->__safeInsert(compact('category_id', 'county_id', 'value', 'year'));
+					list($result_message, $result_class) = $this->__flashSafeInsertResultMsg($county_name, $category_name, $value, $year, $result_code);
 					$result_messages[] = '<p class="'.$result_class.'_message">'.$result_message.'</p>';
 				}
 			}
@@ -88,7 +89,7 @@ class DataController extends AppController {
 		if (! is_numeric($county_id))		return 1.5; // Community ID invalid
 
 		$redundancy_check = $this->Datum->find('all', array(
-			'conditions' => compact('category_id', 'county_id'),
+			'conditions' => compact('category_id', 'county_id', 'year'),
 			'fields' => array('id', 'value'),
 			'contain' => false
 		));
@@ -135,7 +136,7 @@ class DataController extends AppController {
 				foreach ($redundancy_check as $row) {
 					$this->Datum->delete($row['Datum']['id']);
 				}
-				$insert_result = $this->Datum->save(array('Datum' => compact('county_id', 'category_id', 'value')));
+				$insert_result = $this->Datum->save(array('Datum' => compact('county_id', 'category_id', 'value', 'year')));
 				if (! $insert_result) return 4;
 
 			// One entry exists that needs to be overwritten
@@ -156,7 +157,7 @@ class DataController extends AppController {
 	}
 	
 	// Returns array($message, $message_class)
-	public function __flashSafeInsertResultMsg($county_name, $category_name, $value, $result_code) {
+	public function __flashSafeInsertResultMsg($county_name, $category_name, $value, $year, $result_code) {
 		$class = 'notification';
 		switch($result_code) {
 			case 0:

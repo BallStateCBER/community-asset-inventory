@@ -12,11 +12,12 @@ class Datum extends AppModel {
 		)
 	);
 	
-	public function getGradesAndIndices($children_categories, $county_ids) {
+	public function getGradesAndIndices($children_categories, $county_ids, $year = 2018) {
 		$data_results = $this->find('all', array(
 			'conditions' => array(
 				'category_id' => array_values($children_categories),
-				'county_id' => $county_ids
+				'county_id' => $county_ids,
+                'year' => $year
 			),
 			'fields' => array('category_id', 'county_id', 'value'),
 			'contain' => false
