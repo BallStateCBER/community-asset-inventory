@@ -5,12 +5,12 @@
 
 <div id="downloads_screenshots">
 	<a href="/files/CAIR-Report2012.pdf" alt="Print Report 2012 (PDF)">
-		<img src="/img/PrintReport2012.png" />
+		<img src="/img/reports/PrintReport2012.png" />
 		<br />
 		<span>Download Print Report 2012 (PDF)</span>
 	</a>
 	<a href="/files/CAIR-RawData2012.xls" alt="Raw Data Spreadsheet 2012 (Excel)">
-		<img src="/img/RawData2012.png" />
+		<img src="/img/reports/RawData2012.png" />
 		<br />
 		<span>Download Raw Data Spreadsheet 2012 (Excel)</span>
 	</a>
