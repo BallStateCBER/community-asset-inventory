@@ -4,12 +4,12 @@
 </p>
 
 <div id="downloads_screenshots">
-	<a href="/files/CAIR2018-20190510.pdf">
+	<a href="/files/CAIR Report 2018.pdf">
 		<img src="/img/reports/CAIR2018-cover.jpg" alt="Print Report 2018 (PDF)" />
 		<br />
 		<span>Download Print Report 2018 (PDF)</span>
 	</a>
-	<a href="/files/00 CAIR Rawdata 2018_FINAL.xlsx">
+	<a href="/files/CAIR raw data 2018.xlsx">
 		<img src="/img/reports/RawData2012.png" alt="Raw Data Spreadsheet 2018 (Excel)" />
 		<br />
 		<span>Download Raw Data Spreadsheet 2018 (Excel)</span>
