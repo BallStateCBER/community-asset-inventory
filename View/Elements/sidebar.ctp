@@ -62,6 +62,17 @@
 	Download
 </h3>
 <ul class="unstyled">
+    <li>
+        <a href="/files/CAIR Report 2018.pdf">
+            Print Report 2018 (PDF)
+        </a>
+    </li>
+    <li>
+        <a href="/files/CAIR raw data 2018.xlsx">
+            Raw Data Spreadsheet 2018 (Excel)
+        </a>
+    </li>
+
 	<li>
 		<a href="/files/CAIR-Report2012.pdf">
 			Print Report 2012 (PDF)
